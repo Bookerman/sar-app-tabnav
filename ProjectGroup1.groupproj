@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{57FDD368-FAD3-4396-9712-045E8002AF89}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\Team Lead App\Team_Leader_Aide_Memoire.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TabbedwithNavigation.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Team_Leader_Aide_Memoire">
+        <MSBuild Projects="..\Team Lead App\Team_Leader_Aide_Memoire.dproj"/>
+    </Target>
+    <Target Name="Team_Leader_Aide_Memoire:Clean">
+        <MSBuild Projects="..\Team Lead App\Team_Leader_Aide_Memoire.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Team_Leader_Aide_Memoire:Make">
+        <MSBuild Projects="..\Team Lead App\Team_Leader_Aide_Memoire.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TabbedwithNavigation">
+        <MSBuild Projects="TabbedwithNavigation.dproj"/>
+    </Target>
+    <Target Name="TabbedwithNavigation:Clean">
+        <MSBuild Projects="TabbedwithNavigation.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabbedwithNavigation:Make">
+        <MSBuild Projects="TabbedwithNavigation.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Team_Leader_Aide_Memoire;TabbedwithNavigation"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Team_Leader_Aide_Memoire:Clean;TabbedwithNavigation:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Team_Leader_Aide_Memoire:Make;TabbedwithNavigation:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,474 @@
+object TabbedwithNavigationForm: TTabbedwithNavigationForm
+  Left = 0
+  Top = 0
+  Caption = 'Form56'
+  ClientHeight = 596
+  ClientWidth = 405
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Touch.GestureManager = GestureManager1
+    OnGesture = GestureDone
+    Align = Client
+    FullSize = True
+    Size.Width = 405.000000000000000000
+    Size.Height = 566.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    object TabArrival: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 68.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 0
+      Text = 'Arrival'
+      object TabArrivalSub: TTabControl
+        Touch.GestureManager = GestureManager1
+        OnGesture = GestureDone
+        Align = Client
+        FullSize = True
+        Size.Width = 405.000000000000000000
+        Size.Height = 517.000000000000000000
+        Size.PlatformDefault = False
+        TabHeight = 49.000000000000000000
+        TabIndex = 0
+        TabOrder = 0
+        TabPosition = None
+        object TabOwnActions: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'TabOwnActions'
+          object ToolBar1: TToolBar
+            Size.Width = 405.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lblTitle1: TLabel
+              Align = Contents
+              Size.Width = 405.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toollabel'
+              TextSettings.HorzAlign = Center
+              Text = 'Own actions on arrival at search'
+            end
+            object btnNext: TSpeedButton
+              Action = NextTabAction1
+              Align = Right
+              Enabled = True
+              ImageIndex = -1
+              Margins.Right = 5.000000000000000000
+              Position.X = 340.000000000000000000
+              Size.Width = 60.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              Visible = True
+            end
+          end
+          object CheckBox28: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 311.000000000000000000
+            Size.Width = 169.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            Text = 'Info on Subject'
+          end
+          object CheckBox29: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 353.000000000000000000
+            TabOrder = 8
+            Text = 'Check maps'
+          end
+          object CheckBox27: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 263.000000000000000000
+            TabOrder = 6
+            Text = 'Assist with setup'
+          end
+          object CheckBox26: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 223.000000000000000000
+            TabOrder = 5
+            Text = 'Helmet'
+          end
+          object CheckBox25: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 183.000000000000000000
+            Size.Width = 217.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Rain gear / Pack Cover'
+          end
+          object CheckBox24: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 142.000000000000000000
+            TabOrder = 3
+            Text = 'Gaiters'
+          end
+          object CheckBox23: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 104.000000000000000000
+            TabOrder = 2
+            Text = 'T-card'
+          end
+          object CheckBox22: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 64.000000000000000000
+            TabOrder = 0
+            Text = 'Sign in'
+          end
+        end
+        object TabItem1: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'TabItem6'
+          object ToolBar6: TToolBar
+            Size.Width = 405.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Label1: TLabel
+              Align = Contents
+              Size.Width = 405.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toollabel'
+              TextSettings.HorzAlign = Center
+              Text = 'Action some action(s)'
+            end
+            object SpeedButton1: TSpeedButton
+              Action = PreviousTabAction1
+              Align = Left
+              Enabled = True
+              ImageIndex = -1
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 67.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'backtoolbutton'
+              Visible = True
+            end
+            object SpeedButton2: TSpeedButton
+              Action = NextTabAction1
+              Align = Right
+              Enabled = True
+              ImageIndex = -1
+              Margins.Right = 5.000000000000000000
+              Position.X = 340.000000000000000000
+              Size.Width = 60.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              Visible = True
+            end
+          end
+        end
+        object TabItem6: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'TabItem6'
+          object ToolBar2: TToolBar
+            Size.Width = 405.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lblTitle2: TLabel
+              Align = Contents
+              Size.Width = 405.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toollabel'
+              TextSettings.HorzAlign = Center
+              Text = 'Arrival some other actions'
+            end
+            object btnBack: TSpeedButton
+              Action = PreviousTabAction1
+              Align = Left
+              Enabled = True
+              ImageIndex = -1
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 67.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'backtoolbutton'
+              Visible = True
+            end
+          end
+        end
+      end
+    end
+    object TabStaging: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 68.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 0
+      Text = 'Staging'
+      object ToolBarStaging: TToolBar
+        Size.Width = 405.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object ToolBar3: TToolBar
+          Size.Width = 405.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblTitle3: TLabel
+            Align = Contents
+            Size.Width = 405.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'toollabel'
+            TextSettings.HorzAlign = Center
+            Text = 'Title'
+          end
+        end
+      end
+      object TabStagingSub: TTabControl
+        Align = Client
+        Size.Width = 405.000000000000000000
+        Size.Height = 477.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        TabPosition = PlatformDefault
+      end
+    end
+    object TabBriefing: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 68.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemsearch'
+      TabOrder = 0
+      Text = 'Briefing'
+      object ToolBar4: TToolBar
+        Size.Width = 405.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblTitle4: TLabel
+          Align = Contents
+          Size.Width = 405.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Title'
+        end
+      end
+    end
+    object TabOnTask: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 68.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 0
+      Text = 'On Task'
+      object ToolBar5: TToolBar
+        Size.Width = 405.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblTitle5: TLabel
+          Align = Contents
+          Size.Width = 405.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Title'
+        end
+      end
+    end
+    object TabFirstAid: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 68.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'First Aid'
+      object Memo2: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'FIRST AID ACTIONS'
+          '1. Safety and Security of the Scene'
+          '  - Find ALL the victims'
+          '2. Preliminary Assessment'
+          'Airway - '
+          'Breathing - '
+          'Circulation -'
+          '3. Seconday Assessment'
+          'Symptoms'
+          'Allergies'
+          'Medications'
+          'Past/present medical history'
+          'Last intake/output'
+          'Events leading up to the injury')
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 385.000000000000000000
+        Size.Height = 497.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 381.000000000000000000
+        Viewport.Height = 493.000000000000000000
+      end
+    end
+    object TabRadio: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 63.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Radio'
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'SBO-OVSAR Channels'
+          'Ch 1  Main      151.085    151.085'
+          'Ch 2  Working   151.115    151.115'
+          'Ch 3  SAR Ch    149.08     149.08'
+          'Ch 4  Repeater  151.085    ???'
+          'Ch 8  EMGCTR    146.88     146.28'
+          ''
+          'REH Repeater Network (Amateur Radio)'
+          '22    REHLAN    444.15      449.15  Lancaster, ON'
+          '23    REHCLY    147.105     147.705 Cantley, QC'
+          '24    REHBUK    145.49      144.89  Buckingham, QC'
+          '25    REHPAK    145.33      144.73  Pakenham, ON'
+          '26    REHMSM    146.61      146.01  Mt. Ste. Marie, QC'
+          '27    REHMLR    147.105     147.705 Montreal, QC'
+          '28    REHCB     147.39      147.99  Cantley, QC'
+          '29    REHCF     147.36      147.96  Camp Fortune, QC'
+          '30    REHBF     145.17      145.17'
+          '31    REHRPN    147.39      147.99  Ripon, QC'
+          '32    REHHUB    444.6       449.6   St. Hubert, QC'
+          '33    REHMTL    444.6       449.6   Montreal, QC')
+        StyledSettings = [Size, Style, FontColor]
+        TextSettings.Font.Family = 'Courier New'
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 385.000000000000000000
+        Size.Height = 497.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 381.000000000000000000
+        Viewport.Height = 477.000000000000000000
+      end
+    end
+  end
+  object HeaderToolBar: TToolBar
+    Anchors = []
+    Size.Width = 405.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBarLabel: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 405.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.HorzAlign = Center
+      Text = 'SBO-OVSAR Aide Memoire'
+    end
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 328
+    Top = 193
+    GestureData = <
+      item
+        Control = TabControl1
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end
+      item
+        Control = TabArrivalSub
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+  object ActionList1: TActionList
+    Left = 328
+    Top = 144
+    object NextTabAction1: TNextTabAction
+      Category = 'Tab'
+      TabControl = TabArrivalSub
+    end
+    object PreviousTabAction1: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = TabArrivalSub
+    end
+  end
+end
